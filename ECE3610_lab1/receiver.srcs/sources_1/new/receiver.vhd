@@ -14,11 +14,11 @@ end receiver;
 architecture Behavioral of receiver is
     type STATES is (IDLE, START_BIT, DATA, STOP_BIT);    
     signal state_rx : STATES := IDLE;
-    constant FULL_COUNT : natural:= 100e6 / 115200;
-    constant HALF_COUNT : natural:= FULL_COUNT / 2;
-    signal bit_count: natural range 0 to 7 := 0;
-    signal flag_count : natural range 0 to 10 := 5;
-    signal f_count : natural range 0 to FULL_COUNT:= FULL_COUNT;
+    constant FULL_COUNT : integer:= 100e6 / 115200;
+    constant HALF_COUNT : integer:= FULL_COUNT / 2;
+    signal bit_count: integer range 0 to 7 := 0;
+    signal flag_count : integer range 0 to 10 := 5;
+    signal f_count : integer range 0 to FULL_COUNT:= FULL_COUNT;
     signal data_buffer : std_logic_vector(7 downto 0);
 
 

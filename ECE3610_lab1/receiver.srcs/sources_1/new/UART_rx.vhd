@@ -32,4 +32,3 @@ R: receiver port map(    clk => clk,
                          ready => rdy);
  
 end Behavioral;
-
