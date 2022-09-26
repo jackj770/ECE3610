@@ -1,3 +1,98 @@
+--library IEEE;
+--use IEEE.STD_LOGIC_1164.ALL;
+--use IEEE.NUMERIC_STD.ALL;
+
+--entity reciever_TB is
+----  Port ( );
+--end reciever_TB;
+
+--architecture Behavioral of reciever_TB is
+
+--component receiver is
+--    Port ( clk : in std_logic;
+--           reset : in std_logic;
+--           sdata : in std_logic;
+--           pdata : out std_logic_vector(7 downto 0);
+--           ready : out std_logic);
+--end component;
+
+--signal clk_tb: std_logic;
+--signal reset_tb: std_logic;
+--signal sdata_tb : std_logic :='1';
+--signal pdata_tb : std_logic_vector(7 downto 0);
+--signal ready_tb : std_logic;
+--signal char_1 : std_logic_vector(7 downto 0);
+--signal char_2 : std_logic_vector(7 downto 0);
+--signal FC : integer :=868;
+
+--begin
+--uut: receiver port map(clk => clk_tb,
+--                       reset => reset_tb,
+--                       sdata => sdata_tb,
+--                       pdata => pdata_tb,
+--                       ready => ready_tb);
+
+----clock process
+--process
+--begin
+--    clk_tb <= '1';
+--    wait for 5ns;
+--    clk_tb <= not clk_tb;
+--    wait for 5ns;
+--end process;
+
+----reciever test process
+--process
+--begin
+--    reset_tb <= '1';
+--    wait for 10ns;
+--    reset_tb <= '0';
+--    wait for 10ns;
+--    sdata_tb <= '0';
+--    wait for 86.8ns;
+--    sdata_tb <= '1'; --0
+--    wait for 86.8ns;
+--    sdata_tb <= '1'; --1
+--    wait for 86.8ns;
+--    sdata_tb <= '1'; --2
+--    wait for 86.8ns;
+--    sdata_tb <= '1'; --3
+--    wait for 86.8ns;
+--    sdata_tb <= '0'; --4
+--    wait for 86.8ns;
+--    sdata_tb <= '0'; --5
+--    wait for 86.8ns;
+--    sdata_tb <= '1'; --6
+--    wait for 86.8ns;
+--    sdata_tb <= '0'; --7
+--    wait for 86.8ns;
+--    char_1 <= pdata_tb;
+--    sdata_tb <= '0';
+--    wait for 86.8ns;
+--    sdata_tb <= '1'; --0
+--    wait for 86.8ns;
+--    sdata_tb <= '1'; --1
+--    wait for 86.8ns;
+--    sdata_tb <= '0'; --2
+--    wait for 86.8ns;
+--    sdata_tb <= '1'; --3
+--    wait for 86.8ns;
+--    sdata_tb <= '0'; --4
+--    wait for 86.8ns;
+--    sdata_tb <= '0'; --5
+--    wait for 86.8ns;
+--    sdata_tb <= '1'; --6
+--    wait for 86.8ns;
+--    sdata_tb <= '0'; --7
+--    wait for 86.8ns;
+--    char_2 <= pdata_tb;
+--    wait;
+    
+--end process;
+
+--end Behavioral;
+
+
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 

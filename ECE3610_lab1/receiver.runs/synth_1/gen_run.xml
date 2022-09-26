@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1663798612">
-  <File Type="PA-TCL" Name="UART_Rx_Top.tcl"/>
-  <File Type="REPORTS-TCL" Name="UART_Rx_Top_reports.tcl"/>
-  <File Type="RDS-RDS" Name="UART_Rx_Top.vds"/>
-  <File Type="RDS-UTIL" Name="UART_Rx_Top_utilization_synth.rpt"/>
-  <File Type="RDS-UTIL-PB" Name="UART_Rx_Top_utilization_synth.pb"/>
-  <File Type="RDS-DCP" Name="UART_Rx_Top.dcp"/>
+<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1663872133">
+  <File Type="PA-TCL" Name="lab1.tcl"/>
+  <File Type="REPORTS-TCL" Name="lab1_reports.tcl"/>
+  <File Type="RDS-RDS" Name="lab1.vds"/>
+  <File Type="RDS-UTIL" Name="lab1_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="lab1_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="lab1.dcp"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/new/receiver.vhd">
@@ -29,7 +29,7 @@
     </File>
     <Config>
       <Option Name="DesignMode" Val="RTL"/>
-      <Option Name="TopModule" Val="UART_Rx_Top"/>
+      <Option Name="TopModule" Val="lab1"/>
       <Option Name="TopAutoSet" Val="TRUE"/>
     </Config>
   </FileSet>

@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/jackf/School/Engineering/ECE3610/receiver/receiver.runs/synth_1'
+HD_PWD='C:/Users/jackf/School/Engineering/ECE3610/ECE3610_lab1/receiver.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
@@ -40,4 +40,4 @@ EAStep()
      fi
 }
 
-EAStep vivado -log UART_Rx_Top.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source UART_Rx_Top.tcl
+EAStep vivado -log lab1.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source lab1.tcl

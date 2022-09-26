@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/jackf/School/Engineering/ECE3610/receiver/receiver.runs/impl_1'
+HD_PWD='C:/Users/jackf/School/Engineering/ECE3610/ECE3610_lab1/receiver.runs/impl_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
@@ -42,6 +42,6 @@ EAStep()
 
 # pre-commands:
 /bin/touch .write_bitstream.begin.rst
-EAStep vivado -log UART_Rx_Top.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source UART_Rx_Top.tcl -notrace
+EAStep vivado -log lab1.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source lab1.tcl -notrace
 
 
